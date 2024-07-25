@@ -63,6 +63,7 @@ const ManageHotelForm = ({ onSave, isLoading}: Props) => {
   return (
     <FormProvider {...formMethods}>
       <form className="flex flex-col gap-10" onSubmit={onSubmit}>
+      {/* FormProvider is a provider component that propagates the useForm methods to all children components via React Context API. To be used with useFormContext as will be seen in all the children components inside this section */}
         <DetailsSection />
         <TypeSection />
         <FacilitiesSection />

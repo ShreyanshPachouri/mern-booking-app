@@ -15,6 +15,8 @@ const AddHotel = () => {
     },
   });
 
+  //apiClient.addMyHotel is the function that mutates the data and the object which is declared after apiClient.addMyHotel contains methods which deal with the different results that can arise from that mutation.
+
   const handleSave = (hotelFormData: FormData) => {
     mutate(hotelFormData);
   };
